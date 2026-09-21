@@ -1,0 +1,246 @@
+/* =========================================
+   MASARAP BAKESHOP
+   EXTERNAL CSS
+   ========================================= */
+
+/* UNIVERSAL SELECTOR */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3a2b1f;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(
+        135deg,
+        #8a5a2b,
+        #c98a45
+    );
+
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* HEADER TITLE */
+header h1 {
+    margin: 0;
+    font-size: 2.6em;
+    letter-spacing: 1px;
+}
+
+/* HEADER SUBTITLE */
+header p {
+    margin: 6px 0 0;
+    font-size: 1.1em;
+    color: #fff0b2;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #6e451f;
+    text-align: center;
+    padding: 10px;
+}
+
+/* NAVIGATION LINKS */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+/* NAVIGATION HOVER */
+nav a:hover {
+    color: #ffd699;
+    text-decoration: underline;
+}
+
+/* INTRODUCTION */
+.intro {
+    max-width: 700px;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 1.05em;
+    line-height: 1.5em;
+}
+
+/* SECTION TITLES */
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #6e451f;
+    margin: 40px 0 25px;
+}
+
+/* PRODUCTS CONTAINER */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    background-color: #fbefe0;
+    border: 1px solid #e2c9a5;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* PRODUCT CARD HOVER */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* PRODUCT IMAGE */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* PRODUCT TITLE */
+.product-card h3 {
+    margin: 8px 0 5px;
+    color: #6e451f;
+}
+
+/* PRODUCT DESCRIPTION */
+.product-card p {
+    font-size: 0.9em;
+    margin: 0 8px;
+}
+
+/* PRICE */
+.price {
+    font-weight: bold;
+    color: #8a5a2b;
+    font-size: 1.05em;
+    margin-top: 8px !important;
+}
+
+/* DIVIDER */
+.divider {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    border: none;
+    border-top: 2px solid #e2c9a5;
+}
+
+/* ORDER SECTION */
+.order-section {
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+/* ORDER FORM */
+.order-form {
+    max-width: 460px;
+    margin: 25px auto 0;
+    background-color: #fbefe0;
+    border: 1px solid #e2c9a5;
+    border-radius: 10px;
+    padding: 25px 30px;
+    text-align: left;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM ROW */
+.form-row {
+    margin-bottom: 16px;
+}
+
+/* FORM LABEL */
+.form-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* TEXT INPUT AND SELECT */
+.form-row input[type="text"],
+.form-row select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d9b48f;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* CHECKBOX */
+.form-row input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    background-color: #8a5a2b;
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* SUBMIT BUTTON HOVER */
+.submit-btn:hover {
+    background-color: #6e451f;
+}
+
+/* FOOTER */
+footer {
+    background-color: #8a5a2b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .order-form {
+        width: 95%;
+    }
+}

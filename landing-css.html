@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Masarap Bakeshop</title>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        .highlight {
+            color: #d9822b;
+            font-style: italic;
+        }
+
+        .section-title span {
+            border-bottom: 3px solid #c98a45;
+            padding-bottom: 4px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Masarap Bakeshop</h1>
+        <p>Fresh Filipino Breads Baked Daily</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Breads</a>
+        <a href="#order">Order</a>
+        <a href="index.html">HTML Version</a>
+        <a href="landing-bootstrap.html">Bootstrap Version</a>
+    </nav>
+
+    <!-- HOME -->
+    <a name="home"></a>
+
+    <div class="intro">
+        <p>
+            Warm, soft, and freshly baked every morning using traditional
+            Filipino recipes.
+            <span class="highlight">Visit our bakeshop</span>
+            or order ahead for pickup.
+        </p>
+    </div>
+
+    <!-- PRODUCTS -->
+    <a name="products"></a>
+
+    <h2 class="section-title">
+        <span>Our Breads</span>
+    </h2>
+
+    <div class="products">
+
+        <!-- ENSAYMADA -->
+        <div class="product-card">
+
+            <img src="images/product1.jpg" alt="Ensaymada">
+
+            <h3>Ensaymada</h3>
+
+            <p>
+                Soft brioche bread topped with butter,
+                sugar, and grated cheese.
+            </p>
+
+            <p class="price">₱35 each</p>
+
+        </div>
+
+        <!-- PANDESAL -->
+        <div class="product-card">
+
+            <img src="images/product2.jpg" alt="Pandesal">
+
+            <h3>Pandesal</h3>
+
+            <p>
+                Classic soft Filipino bread rolls,
+                freshly baked every morning.
+            </p>
+
+            <p class="price">₱8 each</p>
+
+        </div>
+
+        <!-- PAN DE COCO -->
+        <div class="product-card">
+
+            <img src="images/product3.jpg" alt="Pan de Coco">
+
+            <h3>Pan de Coco</h3>
+
+            <p>
+                Soft bread filled with sweet,
+                chewy coconut filling.
+            </p>
+
+            <p class="price">₱20 each</p>
+
+        </div>
+
+    </div>
+
+    <!-- DIVIDER -->
+    <hr class="divider">
+
+    <!-- ORDER FORM -->
+    <a name="order"></a>
+
+    <div class="order-section">
+
+        <h2 class="section-title">
+            <span>Order Now</span>
+        </h2>
+
+        <p>
+            Fill out the form below to place an order for pickup.
+        </p>
+
+        <form class="order-form" action="#" method="post">
+
+            <!-- NAME -->
+            <div class="form-row">
+
+                <label for="fullname">Name</label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Justine Marc D. Ebio"
+                >
+
+            </div>
+
+            <!-- CONTACT NUMBER -->
+            <div class="form-row">
+
+                <label for="phone">Contact Number</label>
+
+                <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="09XX XXX XXXX"
+                >
+
+            </div>
+
+            <!-- ORDER -->
+            <div class="form-row">
+
+                <label>Order</label>
+
+                <input
+                    type="checkbox"
+                    name="order"
+                    value="ensaymada"
+                    id="c1"
+                >
+
+                <label
+                    for="c1"
+                    style="display:inline; font-weight:normal;"
+                >
+                    Ensaymada
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    name="order"
+                    value="pandesal"
+                    id="c2"
+                >
+
+                <label
+                    for="c2"
+                    style="display:inline; font-weight:normal;"
+                >
+                    Pandesal
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    name="order"
+                    value="pandecoco"
+                    id="c3"
+                >
+
+                <label
+                    for="c3"
+                    style="display:inline; font-weight:normal;"
+                >
+                    Pan de Coco
+                </label>
+
+            </div>
+
+            <!-- PICKUP TIME -->
+            <div class="form-row">
+
+                <label for="pickup">Pickup Time</label>
+
+                <select id="pickup" name="pickup">
+
+                    <option value="morning">
+                        Morning (7 - 10 AM)
+                    </option>
+
+                    <option value="afternoon">
+                        Afternoon (1 - 5 PM)
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div
+                class="form-row"
+                style="text-align:center; margin-bottom:0;"
+            >
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Place Order
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 Masarap Bakeshop
+    </footer>
+
+</body>
+</html>

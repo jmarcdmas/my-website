@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Masarap Bakeshop</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Masarap Bakeshop</h1>
+
+        <h2>Fresh Filipino Breads Baked Daily</h2>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#products">Our Breads</a> |
+            <a href="#order">Order Now</a> |
+            <a href="#contact">Contact</a> |
+            <a href="landing-css.html">CSS Version</a> |
+            <a href="landing-bootstrap.html">Bootstrap Version</a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <!-- HOME SECTION -->
+
+    <div id="home">
+
+        <h2>Welcome to Masarap Bakeshop!</h2>
+
+        <p>
+            Welcome to Masarap Bakeshop, where we serve fresh and delicious
+            Filipino breads every day. Our breads are made with simple
+            ingredients and baked fresh for our customers.
+        </p>
+
+        <p>
+            We offer some of the favorite Filipino breads such as
+            <strong>Ensaymada</strong>, <strong>Pandesal</strong>, and
+            <strong>Pan de Coco</strong>.
+        </p>
+
+        <img src="images/product1.jpg"
+             alt="Fresh Filipino bread"
+             width="500">
+
+    </div>
+
+    <hr>
+
+    <!-- PRODUCTS SECTION -->
+
+    <div id="products">
+
+        <h2>Our Breads</h2>
+
+        <p>
+            Check out some of our popular products below.
+        </p>
+
+        <!-- PRODUCT 1 -->
+
+        <div>
+
+            <h3>Ensaymada</h3>
+
+            <img src="images/product1.jpg"
+                 alt="Ensaymada"
+                 width="250">
+
+            <p>
+                Soft and sweet bread topped with butter, sugar,
+                and grated cheese.
+            </p>
+
+        </div>
+
+        <br>
+
+        <!-- PRODUCT 2 -->
+
+        <div>
+
+            <h3>Pandesal</h3>
+
+            <img src="images/product2.jpg"
+                 alt="Pandesal"
+                 width="250">
+
+            <p>
+                A classic Filipino bread roll that is soft,
+                slightly sweet, and perfect for breakfast.
+            </p>
+
+        </div>
+
+        <br>
+
+        <!-- PRODUCT 3 -->
+
+        <div>
+
+            <h3>Pan de Coco</h3>
+
+            <img src="images/product3.jpg"
+                 alt="Pan de Coco"
+                 width="250">
+
+            <p>
+                Soft Filipino bread filled with sweet coconut filling.
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- PRICE TABLE -->
+
+    <div>
+
+        <h2>Product Price List</h2>
+
+        <table border="1">
+
+            <caption>
+                Masarap Bakeshop Products and Prices
+            </caption>
+
+            <thead>
+
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Ensaymada</td>
+                    <td>Soft bread with butter, sugar and cheese</td>
+                    <td>₱35</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Pandesal</td>
+                    <td>Classic Filipino bread rolls</td>
+                    <td>₱8</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Pan de Coco</td>
+                    <td>Bread with sweet coconut filling</td>
+                    <td>₱20</td>
+                    <td>Available</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <hr>
+
+    <!-- ORDER SECTION -->
+
+    <div id="order">
+
+        <h2>Order Now</h2>
+
+        <p>
+            Fill out the form below if you want to order our breads.
+        </p>
+
+        <form action="#" method="post">
+
+            <!-- PERSONAL INFORMATION -->
+
+            <fieldset>
+
+                <legend>Customer Information</legend>
+
+                <label for="name">Full Name:</label>
+
+                <br>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name">
+
+                <br><br>
+
+                <label for="email">Email:</label>
+
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email">
+
+                <br><br>
+
+                <label for="phone">Contact Number:</label>
+
+                <br>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="09XX XXX XXXX">
+
+            </fieldset>
+
+            <br>
+
+            <!-- BREAD SELECTION -->
+
+            <fieldset>
+
+                <legend>Select Your Bread</legend>
+
+                <input type="checkbox"
+                       id="ensaymada"
+                       name="bread"
+                       value="Ensaymada">
+
+                <label for="ensaymada">
+                    Ensaymada
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="pandesal"
+                       name="bread"
+                       value="Pandesal">
+
+                <label for="pandesal">
+                    Pandesal
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="pandecoco"
+                       name="bread"
+                       value="Pan de Coco">
+
+                <label for="pandecoco">
+                    Pan de Coco
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- QUANTITY -->
+
+            <fieldset>
+
+                <legend>Quantity</legend>
+
+                <label for="quantity">
+                    Number of Items:
+                </label>
+
+                <br>
+
+                <input type="number"
+                       id="quantity"
+                       name="quantity"
+                       min="1"
+                       max="50"
+                       value="1">
+
+            </fieldset>
+
+            <br>
+
+            <!-- PICKUP TIME -->
+
+            <fieldset>
+
+                <legend>Pickup Information</legend>
+
+                <label for="pickup">
+                    Preferred Pickup Time:
+                </label>
+
+                <br>
+
+                <select id="pickup" name="pickup">
+
+                    <option value="morning">
+                        Morning (7:00 AM - 10:00 AM)
+                    </option>
+
+                    <option value="afternoon">
+                        Afternoon (1:00 PM - 5:00 PM)
+                    </option>
+
+                    <option value="evening">
+                        Evening (5:00 PM - 7:00 PM)
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label for="message">
+                    Additional Request:
+                </label>
+
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          cols="40"
+                          placeholder="Write your request here"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <!-- PAYMENT -->
+
+            <fieldset>
+
+                <legend>Payment Method</legend>
+
+                <input type="radio"
+                       id="cash"
+                       name="payment"
+                       value="Cash">
+
+                <label for="cash">
+                    Cash
+                </label>
+
+                <br>
+
+                <input type="radio"
+                       id="gcash"
+                       name="payment"
+                       value="GCash">
+
+                <label for="gcash">
+                    GCash
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- BUTTONS -->
+
+            <input type="submit" value="Place Order">
+
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <!-- CONTACT SECTION -->
+
+    <div id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            <strong>Masarap Bakeshop</strong>
+        </p>
+
+        <p>
+            Address: Alcala, Pangasinan, Philippines
+        </p>
+
+        <p>
+            Contact Number: 0927 538 7812
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:justinemarcebio@gmail.com">
+                justinemarcebio@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Business Hours:
+        </p>
+
+        <ul>
+            <li>Monday - Friday: 7:00 AM - 7:00 PM</li>
+            <li>Saturday: 7:00 AM - 6:00 PM</li>
+            <li>Sunday: 8:00 AM - 5:00 PM</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Masarap Bakeshop. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
